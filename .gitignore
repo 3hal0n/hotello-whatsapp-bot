@@ -1,0 +1,137 @@
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv-bak/
+.Python
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+*.dylib
+*.pyd
+
+# Distribution / packaging
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+var/
+*.egg-info/
+*.egg
+pip-wheel-metadata/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Poetry / pipenv
+.poetry/
+poetry.lock
+Pipfile.lock
+
+# pyenv
+.python-version
+
+# Unit test / coverage
+.pytest_cache/
+.mypy_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+nosetests.xml
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+.ropeproject/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# dotenv / secrets
+.env
+.env.*
+.env.local
+.secrets
+secrets.json
+credentials.json
+*.pem
+*.key
+*.crt
+*.cer
+
+# AWS / Google credentials
+.aws/
+google-credentials.json
+
+# Database files
+*.sqlite3
+*.db
+*.db-journal
+
+# Docker
+docker-compose.override.yml
+docker-compose.*.yml
+Dockerfile.*
+
+# Node
+node_modules/
+dist-node/
+
+# Build artifacts
+target/
+
+# Editor backup files
+*~
+*.swp
+*.swo
+*.bak
+
+# Static analysis
+.ruff_cache/
+.mypy_cache/
+
+# Test artifacts
+test-results/
+pytestdebug.log
+
+# Misc
+__MACOSX/
+Thumbs.db
+ehthumbs.db
+Icon?
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Compiled files
+*.class
+*.o
+*.obj
