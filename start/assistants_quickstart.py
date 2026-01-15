@@ -1,12 +1,13 @@
-from openai import OpenAI
+from gemini import Gemini
 import shelve
 from dotenv import load_dotenv
 import os
 import time
 
 load_dotenv()
-OPEN_AI_API_KEY = os.getenv("OPEN_AI_API_KEY")
-client = OpenAI(api_key=OPEN_AI_API_KEY)
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+GEMINI_ASSISTANT_ID = os.getenv("GEMINI_ASSISTANT_ID")
+client = Gemini(api_key=GEMINI_API_KEY)
 
 
 # --------------------------------------------------------------
@@ -96,7 +97,7 @@ def generate_response(message_body, wa_id, name):
 # --------------------------------------------------------------
 def run_assistant(thread):
     # Retrieve the Assistant
-    assistant = client.beta.assistants.retrieve("asst_7Wx2nQwoPWSf710jrdWTDlfE")
+    assistant = client.beta.assistants.retrieve(GEMINI_ASSISTANT_ID)
 
     # Run the assistant
     run = client.beta.threads.runs.create(
